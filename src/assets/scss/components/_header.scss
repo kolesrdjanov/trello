@@ -1,0 +1,14 @@
+header.nav--header{
+    background-color: $color-main;
+    width: 100%;
+    height: $size--header;
+    padding: 0 15px;
+
+    .nav--header__logo{
+        width: 80px;
+    }
+
+    .nav--header__avatar{
+        @include set-size(30px, 30px);
+    }
+}

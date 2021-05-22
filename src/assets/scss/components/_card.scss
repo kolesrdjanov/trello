@@ -1,0 +1,50 @@
+.board-card{
+    background-color: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    cursor: default;
+
+    *[class^="icon-"]{
+        @include set-size(14px, 14px);
+    }
+}
+
+.card--label__modal{
+    &-text{
+        padding: 10px;
+    }
+
+    &-empty{
+        padding: 17px;
+    }
+}
+
+.card--label{
+    &.card--label__green{
+        background-color: $color-label-green;
+    }
+
+    &.card--label__yellow{
+        background-color: $color-label-yellow;
+    }
+
+    &.card--label__orange{
+        background-color: $color-label-orange;
+    }
+
+    &.card--label__red{
+        background-color: $color-label-red;
+    }
+
+    &.card--label__purple{
+        background-color: $color-label-purple;
+    }
+
+    &.card--label__blue{
+        background-color: $color-label-blue;
+    }
+}
+
+.field-placeholder{
+    background-color: $color-bg--medium;
+}

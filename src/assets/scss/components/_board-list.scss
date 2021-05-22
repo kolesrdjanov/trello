@@ -1,0 +1,42 @@
+$size--board: 50px;
+
+.board--header{
+    height: $size--board;
+}
+
+.board--wrapper{
+    min-height: calc(100vh - #{$size--header} - #{$size--board});
+    overflow-x: auto;
+
+    background: url("../img/img-bg-logo.svg") no-repeat center center;
+    background-size: 240px auto;
+}
+
+.board--aside{
+    position: fixed;
+    top: $size--header;
+    right: 0;
+    width: 300px;
+    background-color: $color-bg--light;
+    bottom: 0;
+    overflow-y: auto;
+
+    .board--aside__menu{
+        background-color: $color-bg--light;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.board--list{
+    width: 260px;
+    display: inline-block;
+    vertical-align: top;
+
+    .board--list__header{
+        .icon-menu{
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

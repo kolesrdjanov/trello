@@ -1,0 +1,25 @@
+body,
+html,
+#app,
+.main--wrapper{
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input,
+button{
+    &:focus{
+        outline: none;
+    }
+}
+
+body{
+    @extend .font-default--family;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-typo--dark;
+}

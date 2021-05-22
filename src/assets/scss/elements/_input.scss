@@ -1,0 +1,40 @@
+.input--main{
+    @extend .transition;
+
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 8px 8px;
+    line-height: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #f9f9f9;
+    }
+
+    &:focus{
+        background-color: #fff;
+        outline: none;
+        cursor: text;
+    }
+}
+
+textarea.input--main{
+    resize: none;
+    border: 2px solid $color-bg--light;
+    border-radius: 4px
+}
+
+.input--main__label{
+    @extend .input--main;
+
+    font-weight: 700;
+}
+
+textarea.input--border,
+.input--border{
+    @extend .input--main;
+
+    background-color: #fff;
+    border: 1px solid $color-border;
+}
