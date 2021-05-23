@@ -2,7 +2,7 @@
     <div>
         <ul class="flex flex-wrap">
             <li
-                class="rounded mr-4 flex items-start flex-basis-200 mb-4 min-height-80"
+                class="rounded flex items-start flex-basis-200 flex-basis-full-md mb-4 min-height-80 md:mr-4 mr-0"
                 v-for="board in boards"
                 :key="board.id"
                 :style="{'backgroundColor': board.prefs.backgroundColor}">
@@ -14,7 +14,7 @@
             </li>
             <li 
                 @click="createNewBoard = true;"
-                class="fs-12 fw-700 bg--medium hover--darken py-8 mb-4 px-4 cursor-pointer text-center rounded flex-basis-200">
+                class="fs-12 fw-700 bg--medium hover--darken py-8 mb-4 px-4 cursor-pointer text-center rounded flex-basis-200 flex-basis-full-md">
                 Create New Board
             </li>
         </ul>

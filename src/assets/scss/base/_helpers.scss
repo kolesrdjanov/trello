@@ -93,3 +93,9 @@
     height: 2px;
     background-color: $color-bg--medium;
 }
+
+@media all and (max-width: 768px) {
+    .flex-basis-full-md {
+        flex-basis: 100%;
+    }
+}

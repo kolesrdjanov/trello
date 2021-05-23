@@ -13,6 +13,8 @@
                 type="text"
                 class="input--main"
                 @keyup.enter="updateListName"
+                @keyup.esc="editMode = false;"
+                @blur="editMode = false;"
                 v-model.trim="list.name">
 
             <div class="relative ml-auto mr-2" v-click-outside="closeListHeaderMenu">

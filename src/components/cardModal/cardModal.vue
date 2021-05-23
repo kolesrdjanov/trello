@@ -1,6 +1,6 @@
 <template>
     <div class="modal--wrapper" v-if="card">
-        <div class="modal modal--large flex">
+        <div class="modal modal--large flex flex-col md:flex-row">
             <div class="icon-close block ml-auto" @click="close();"></div>
             
             <div class="flex-grow">
@@ -99,7 +99,7 @@
             </div>
 
             <!-- modal sidebar -->
-            <div class="flex-basis-140 ml-6">
+            <div class="flex-basis-140 ml-6 hidden md:block">
                 <h4 class="uppercase fs-11 fw-600 text--medium mb-2">Actions</h4>
 
                 <button 
