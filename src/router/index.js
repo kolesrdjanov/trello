@@ -30,6 +30,11 @@ const routes = [
 				]
 			}
 		]
+	},
+	{ 
+		path: '/*', 
+		component: () => import("@/views/notFound.vue"),
+		name: 'NotFound'
 	}
 ]
 
@@ -37,8 +42,6 @@ const routes = [
 // TODO: add route change after to update document.title
 
 const router = new VueRouter({
-	mode: "history",
-	base: process.env.BASE_URL,
 	routes
 })
 

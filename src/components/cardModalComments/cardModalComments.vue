@@ -1,7 +1,7 @@
 <template>
     <div class="mt-2">
         <!-- add new comment -->
-        <div class="flex items-start px-2 py-3">
+        <div class="flex items-start py-3">
             <img
                 class="w-8 h-8 mr-2 flex-shrink-0"
                 :class="{'rounded-full': !user.avatarUrl}"
