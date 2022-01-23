@@ -1,4 +1,4 @@
-# trello web app
+# Trello board with core features built with VueJS
 
 ## Project setup
 ```
