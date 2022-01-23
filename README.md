@@ -20,5 +20,13 @@ npm run build
 npm run lint
 ```
 
+### Env variables
+```
+VUE_APP_TRELLO_KEY={API_KEY}
+VUE_APP_TRELLO_TOKEN={TOKEN}
+VUE_APP_TRELLO_ORG_ID={ORG_ID}
+VUE_APP_BASE_URL={DOMAIN}
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
