@@ -17,6 +17,7 @@
             
             <button
                 class="button button--main"
+                :disabled="saving"
                 @click="submit();">
                     Add
             </button>

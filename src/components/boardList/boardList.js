@@ -27,6 +27,7 @@ export default {
 
 	data() {
 		return {
+      saving: false,
 			showListHeaderMenu: false, 
 			showAddNewCard: false,
 			editMode: false,
@@ -37,6 +38,7 @@ export default {
 
 	methods: {
 		closeListHeaderMenu,
+    closeShowAddNewCard,
 		initEditMode,
 		getCards,
 		getCardsByListId,
@@ -59,6 +61,10 @@ export default {
 
 function closeListHeaderMenu() {
 	this.showListHeaderMenu = false;
+}
+
+function closeShowAddNewCard() {
+  this.showAddNewCard = false
 }
 
 function initEditMode() {
@@ -164,11 +170,15 @@ async function updateCardPosition(listId, { moved, added }) {
 }
 
 async function addNewCard(request) {
+  this.saving = true
 	try {
 		const { data } = await this.$cardRepository.createCard(request);
 
 		this.cards.push(data);
+    this.closeShowAddNewCard()
 	} catch (error) {
 		console.warn(error);
-	}
+	} finally {
+    this.saving = false
+  }
 }

@@ -3,6 +3,10 @@ export default {
         listId: {
             type: String,
             required: true
+        },
+        saving: {
+          type: Boolean,
+          default: false
         }
     },
 
@@ -36,7 +40,6 @@ function submit() {
         ...this.model,
         idList: this.listId
     });
-    this.close();
 }
 
 function close() {

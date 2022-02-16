@@ -54,9 +54,10 @@
             </p>
 
             <list-add-new-card
-                :list-id="list.id"
                 v-if="showAddNewCard"
-                @close="showAddNewCard = false"
+                :list-id="list.id"
+                :saving="saving"
+                @close="closeShowAddNewCard"
                 @save="addNewCard">
             </list-add-new-card>
         </div>
