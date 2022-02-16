@@ -11,3 +11,4 @@ bulletin-cms-seller.iml
 *.iml
 ../.DS_Store
 jsconfig.json
+.env
